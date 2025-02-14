@@ -52,7 +52,7 @@ let cosas = [
 "Tus alegrías ",
 "Tus pasiones ",
 "Tus gustos",
-"Tu aroma",
+"Cuando jugamos roblox",
 "Tu ropa",
 "Tu calma",
 "Tu talento",
@@ -70,7 +70,7 @@ let cosas = [
 "Tu lealtad",
 "El brillo de tus ojos",
 "Dormir juntitos",
-"Cuando jugamos roblox",
+"Tu aroma",
 "Cuando cocinamos (cocinas)",
 "Cuando miramos stranger things",
 "Cuando te hago enojar a propósito (tierna)",
@@ -91,12 +91,11 @@ let cosas = [
 "Tu cuerpo",
 "Tus tetas",
 "Tu culo",
-"bueno basta de obscenidades",
+"Mentira basta de obscenidades",
 "Tu carita hermosa",
 "Siempre que me ayudas con cualquier cosa",
 "Tu cintura",
 "Tu comida",
-"Bueno no se cuantas voy",
 "Tus gemidos",
 "Tu concha",
 "basta",
@@ -114,14 +113,38 @@ console.log(container)
 
 let numero = 1;
 cosas.forEach(cosa => {
-
-
     let a = document.createElement('p');
     a.textContent = `${numero}. ${cosa}`;
     a.classList.add('cosa')
 
     if (cosa === "") {
         a.classList.add('final')
+    }
+    if (cosa === "Cuando te hago enojar a propósito (tierna)") {
+        let img = document.createElement('img');
+        console.log()
+        img.src = 'strangerthings.png'
+        img.style.width = '100px'
+
+        container.appendChild(img)
+    }
+
+    if (cosa === "Tu ropa") {
+        let img = document.createElement('img');
+        console.log()
+        img.src = 'roblox.png'
+        img.style.width = '100px'
+
+        container.appendChild(img)
+    }
+
+    if (cosa === "Nuestros hijos") {
+        let img = document.createElement('img');
+        console.log()
+        img.src = 'pancho.png'
+        img.style.width = '100px'
+
+        container.appendChild(img)
     }
 
     container.appendChild(a)
